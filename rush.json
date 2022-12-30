@@ -325,12 +325,12 @@
    */
   "projects": [
     // packages
-    // {
-    //   "packageName": "@knicola/retry",
-    //   "projectFolder": "packages/retry",
-    //   "shouldPublish": true,
-    //   "tags": ["packages"]
-    // },
+    {
+      "packageName": "@knicola/autobind",
+      "projectFolder": "packages/autobind",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
 
     // tools
     {

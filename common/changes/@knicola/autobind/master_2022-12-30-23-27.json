@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@knicola/autobind",
+      "comment": "Initial Release",
+      "type": "none"
+    }
+  ],
+  "packageName": "@knicola/autobind"
+}

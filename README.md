@@ -10,6 +10,7 @@ A collection of Node.js utility libraries.
 
 | Package | Version | Changelog | Folder |
 | ------- | ------- | --------- | ------ |
+| [@knicola/autobind](https://www.npmjs.com/package/@knicola/autobind) | [![npm version](https://badge.fury.io/js/%40knicola%2Fautobind.svg)](https://badge.fury.io/js/%40knicola%2Fautobind) | [changelog](./packages/autobind/CHANGELOG.md) | [/packages/autobind](./packages/autobind/) |
 | [@knicola/dev-config](https://www.npmjs.com/package/@knicola/dev-config) | [![npm version](https://badge.fury.io/js/%40knicola%2Fdev-config.svg)](https://badge.fury.io/js/%40knicola%2Fdev-config) | [changelog](./tools/dev-config/CHANGELOG.md) | [/tools/dev-config](./tools/dev-config/) |
 
 
