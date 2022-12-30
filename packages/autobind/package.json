@@ -1,6 +1,6 @@
 {
   "name": "@knicola/autobind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Autobind methods of a class to the instance",
   "author": "@knicola",
   "license": "MIT",
