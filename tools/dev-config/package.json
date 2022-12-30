@@ -1,7 +1,7 @@
 {
   "name": "@knicola/dev-config",
   "description": "Base configurations for typescript, eslint, typedoc and jest.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "@knicola",
   "license": "MIT",
   "repository": {
