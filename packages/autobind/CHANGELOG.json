@@ -1,0 +1,17 @@
+{
+  "name": "@knicola/autobind",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@knicola/autobind_v0.1.0",
+      "date": "Fri, 30 Dec 2022 23:31:32 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Initial Release"
+          }
+        ]
+      }
+    }
+  ]
+}
