@@ -1,0 +1,10 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "githubPages": true,
+  "includeVersion": true,
+  "gitRevision": "master",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "out": "docs",
+}

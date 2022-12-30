@@ -1,0 +1,38 @@
+name: "Code Scanning - Action"
+on:
+  workflow_run:
+    workflows: ["Node.js CI"]
+    branches: [master]
+    types:
+      - completed
+  schedule:
+    - cron: '0 10 * * 0'
+
+jobs:
+  CodeQL-Build:
+    if: ${{ false }} # disable for now
+    runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+
+      - name: Rushin and Cachin
+        uses: ./.github/actions/rush-cache
+        with:
+          node-version: 16.x
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2

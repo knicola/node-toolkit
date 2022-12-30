@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@knicola/dev-config/tsconfig/node",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "jest"
+    ],
+    "lib": [ "ES6", "DOM" ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.ts"
+  ]
+}

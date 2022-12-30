@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "extends": [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:promise/recommended",
+    "standard-with-typescript"
+  ],
+  "plugins": [
+    "import",
+    "promise",
+    "n"
+  ],
+  "parserOptions": {
+    "project": [
+      "tsconfig.json"
+    ]
+  },
+  "rules": {
+    "operator-linebreak": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/naming-convention": "off",
+    "indent": ["error", 4],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
+    "linebreak-style": ["error", "unix"],
+    "no-console": "warn",
+    "curly": ["error", "all"],
+    "no-nested-ternary": "error",
+    "space-unary-ops": ["warn", { "overrides": { "!": true, "!!": true } }]
+  }
+}

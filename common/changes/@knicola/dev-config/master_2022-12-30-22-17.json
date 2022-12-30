@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@knicola/dev-config",
+      "comment": "Refactor",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@knicola/dev-config"
+}

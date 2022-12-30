@@ -1,0 +1,46 @@
+name: 'Rush Cache'
+description: 'Rushin and cachin'
+
+inputs:
+  node-version:
+    description: 'Node.js version'
+    required: true
+    default: '16.x'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Use Node.js ${{ inputs.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Cache Rush
+      uses: actions/cache@v3
+      with:
+        path: |
+          common/temp/install-run
+          ~/.rush
+        key: rush-${{ inputs.node-version }}-${{ hashFiles('rush.json') }}
+
+    - name: Cache pnpm
+      uses: actions/cache@v3
+      with:
+        path: |
+          common/temp/pnpm-store
+        key: pnpm-${{ inputs.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+    - name: Cache build
+      uses: actions/cache@v3
+      with:
+        path: |
+          common/temp/build-cache
+        key: build-${{ inputs.node-version }}-${{ hashFiles('*') }}
+
+    - name: Rush Install
+      shell: bash
+      run: node common/scripts/install-run-rush.js install
+
+    - name: Rush Build
+      shell: bash
+      run: node common/scripts/install-run-rush.js build

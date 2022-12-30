@@ -1,0 +1,30 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "Node.js Toolkit",
+  "githubPages": true,
+  "includeVersion": true,
+  "gitRevision": "master",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "readme": "none",
+  "externalPattern": ["**/node_modules/**"],
+  "exclude": ["**/node_modules/**"],
+  "entryPointStrategy": "packages",
+  "entryPoints": [
+  ],
+  "out": "docs",
+  "navigationLinks": {
+    "GitHub": "https://github.com/knicola/node-toolkit"
+  },
+  "externalSymbolLinkMappings": {
+    "global": {
+      "AbortSignal": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "TypeError": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError"
+    },
+    "@types/node": {
+      "EventEmitter": "https://nodejs.org/docs/latest-v16.x/api/events.html#class-eventemitter",
+      "ChildProcess": "https://nodejs.org/docs/latest-v16.x/api/child_process.html#class-childprocess"
+    },
+  }
+}

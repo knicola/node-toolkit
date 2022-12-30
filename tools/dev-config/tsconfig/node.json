@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "stripInternal": true,
+    "strict": true,
+    "sourceMap": true,
+    "types": [ "node" ],
+    "lib": [ "ES6" ]
+  },
+  "exclude": ["node_modules"]
+}

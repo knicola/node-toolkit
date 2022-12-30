@@ -1,0 +1,93 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build, Lint, Test and Verify
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rushin and Cachin
+        uses: ./.github/actions/rush-cache
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Rush lint
+        run: node common/scripts/install-run-rush.js lint
+
+      - name: Rush test
+        run: node common/scripts/install-run-rush.js test
+
+      - name: Verify CHANGELOGS are up-to-date
+        shell: bash
+        run: node common/scripts/install-run-rush.js change --verify
+
+      - name: Verify repo README is up-to-date
+        shell: bash
+        run: node tools/repo/lib/start.js readme --verify
+
+  publish:
+    name: Publish packages
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rushin and Cachin
+        uses: ./.github/actions/rush-cache
+        with:
+          node-version: 16.x
+
+      - name: Rush publish
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          git config --local user.name "gh-bender"
+          git config --local user.email "gh-bender@@users.noreply.github.com"
+          node common/scripts/install-run-rush.js version --bump -b master
+          node common/scripts/install-run-rush.js publish -a -p -b master --include-all --add-commit-details  --set-access-level public
+
+  docs:
+    name: Publish documentation
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rushin and Cachin
+        uses: ./.github/actions/rush-cache
+        with:
+          node-version: 16.x
+
+      - name: Generate documentation
+        run: node common/scripts/install-run-rush.js docs
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
