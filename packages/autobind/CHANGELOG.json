@@ -2,6 +2,23 @@
   "name": "@knicola/autobind",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "@knicola/autobind_v0.1.1",
+      "date": "Fri, 30 Dec 2022 23:48:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix repo url"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@knicola/dev-config\" to `0.3.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.0",
       "tag": "@knicola/autobind_v0.1.0",
       "date": "Fri, 30 Dec 2022 23:31:32 GMT",
