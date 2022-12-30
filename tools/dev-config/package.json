@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/knicola/note-toolkit.git",
+    "url": "https://github.com/knicola/node-toolkit.git",
     "directory": "tools/dev-config"
   },
   "homepage": "https://github.com/knicola/node-toolkit#readme",

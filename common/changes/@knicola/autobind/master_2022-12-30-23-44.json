@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@knicola/autobind",
+      "comment": "Fix repo url",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@knicola/autobind"
+}

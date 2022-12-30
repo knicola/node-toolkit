@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@knicola/dev-config",
+      "comment": "Fix repo url",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@knicola/dev-config"
+}
