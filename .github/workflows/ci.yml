@@ -51,8 +51,8 @@ jobs:
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
-          git config --local user.name "gh-bender"
-          git config --local user.email "gh-bender@@users.noreply.github.com"
+          git config --local user.name "gh-bender[bot]"
+          git config --local user.email "gh-bender[bot]@@users.noreply.github.com"
           node common/scripts/install-run-rush.js version --bump -b master
           node common/scripts/install-run-rush.js publish -a -p -b master --include-all --add-commit-details  --set-access-level public
 
