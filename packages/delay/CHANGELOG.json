@@ -1,0 +1,17 @@
+{
+  "name": "@knicola/delay",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@knicola/delay_v0.1.0",
+      "date": "Sat, 31 Dec 2022 21:53:14 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Initial Release"
+          }
+        ]
+      }
+    }
+  ]
+}
