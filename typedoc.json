@@ -13,6 +13,7 @@
   "entryPointStrategy": "packages",
   "entryPoints": [
     "packages/autobind",
+    "packages/delay",
   ],
   "out": "docs",
   "navigationLinks": {
