@@ -337,6 +337,12 @@
       "shouldPublish": true,
       "tags": ["packages"]
     },
+    {
+      "packageName": "@knicola/repeat",
+      "projectFolder": "packages/repeat",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
 
     // tools
     {
