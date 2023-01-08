@@ -1,0 +1,17 @@
+{
+  "name": "@knicola/repeat",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@knicola/repeat_v0.1.0",
+      "date": "Sun, 08 Jan 2023 21:54:59 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Initial Release"
+          }
+        ]
+      }
+    }
+  ]
+}
