@@ -349,6 +349,12 @@
       "shouldPublish": true,
       "tags": ["packages"]
     },
+    {
+      "packageName": "@knicola/xfetch",
+      "projectFolder": "packages/xfetch",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
 
     // tools
     {

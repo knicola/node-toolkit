@@ -16,6 +16,7 @@
     "packages/delay",
     "packages/repeat",
     "packages/xbackoff",
+    "packages/xfetch",
   ],
   "out": "docs",
   "navigationLinks": {
