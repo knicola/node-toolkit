@@ -343,6 +343,12 @@
       "shouldPublish": true,
       "tags": ["packages"]
     },
+    {
+      "packageName": "@knicola/xbackoff",
+      "projectFolder": "packages/xbackoff",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
 
     // tools
     {

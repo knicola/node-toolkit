@@ -15,6 +15,7 @@
     "packages/autobind",
     "packages/delay",
     "packages/repeat",
+    "packages/xbackoff",
   ],
   "out": "docs",
   "navigationLinks": {
