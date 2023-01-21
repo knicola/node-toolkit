@@ -355,6 +355,12 @@
       "shouldPublish": true,
       "tags": ["packages"]
     },
+    {
+      "packageName": "@knicola/minibus",
+      "projectFolder": "packages/minibus",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
 
     // tools
     {

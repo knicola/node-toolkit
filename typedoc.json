@@ -17,6 +17,7 @@
     "packages/repeat",
     "packages/xbackoff",
     "packages/xfetch",
+    "packages/minibus",
   ],
   "out": "docs",
   "navigationLinks": {
