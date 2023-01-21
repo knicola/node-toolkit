@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@knicola/retry",
+      "comment": "Initial Release",
+      "type": "none"
+    }
+  ],
+  "packageName": "@knicola/retry"
+}

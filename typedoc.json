@@ -15,6 +15,7 @@
     "packages/autobind",
     "packages/delay",
     "packages/repeat",
+    "packages/retry",
     "packages/xbackoff",
     "packages/xfetch",
     "packages/minibus",

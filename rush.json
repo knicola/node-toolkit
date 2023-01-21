@@ -344,6 +344,12 @@
       "tags": ["packages"]
     },
     {
+      "packageName": "@knicola/retry",
+      "projectFolder": "packages/retry",
+      "shouldPublish": true,
+      "tags": ["packages"]
+    },
+    {
       "packageName": "@knicola/xbackoff",
       "projectFolder": "packages/xbackoff",
       "shouldPublish": true,
