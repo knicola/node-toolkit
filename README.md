@@ -30,6 +30,11 @@ A collection of Node.js utility libraries.
 | [/tools/repo](./tools/repo/) | Used to execute various operations specific to this repo. |
 <!-- GENERATED PROJECT SUMMARY END -->
 
+## Versioning
+
+All packages in this collection adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). Please use
+[version constraints](https://docs.npmjs.com/about-semantic-versioning#using-semantic-versioning-to-specify-update-types-your-package-can-accept) accordingly.
+
 ## License
 
 This project is open-sourced software licensed under the [MIT license](./LICENSE).
