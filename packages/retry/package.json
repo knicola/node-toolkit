@@ -1,6 +1,6 @@
 {
   "name": "@knicola/retry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Retries the given task a certain amount of times or until successful.",
   "author": "@knicola",
   "license": "MIT",

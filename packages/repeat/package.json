@@ -1,6 +1,6 @@
 {
   "name": "@knicola/repeat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Repeats the given task for a certain amount of times or forever.",
   "author": "@knicola",
   "license": "MIT",

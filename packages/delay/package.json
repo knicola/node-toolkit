@@ -1,6 +1,6 @@
 {
   "name": "@knicola/delay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Delay code execution for a specified amount of milliseconds.",
   "author": "@knicola",
   "license": "MIT",

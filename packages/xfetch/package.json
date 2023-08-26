@@ -1,6 +1,6 @@
 {
   "name": "@knicola/xfetch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JS implementation of the XFetch algorithm.",
   "author": "@knicola",
   "license": "MIT",
