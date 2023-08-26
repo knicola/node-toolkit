@@ -15,7 +15,12 @@ require('@knicola/dev-config/eslint/patch')
 
 module.exports = {
     extends: ['./node_modules/@knicola/dev-config/eslint/node'],
-    parserOptions: { tsconfigRootDir: __dirname }
+    parserOptions: { tsconfigRootDir: __dirname },
+    settings: {
+        'import/resolver': {
+            typescript: { project: __dirname },
+        },
+    }
 }
 ```
 
@@ -26,6 +31,10 @@ tsconfig.json
   "extends": "@knicola/dev-config/tsconfig/node",
   "compilerOptions": {
     "types": [ "node", "jest" ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": "."
   },
   "include": [ "**/*.ts", "**/*.js" ]
 }
@@ -40,6 +49,10 @@ tsconfig.build.json
     "removeComments": true,
     "noUnusedLocals": true,
     "outDir": "lib/",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "baseUrl": "."
   },
   "include": [ "src/**/*.ts" ]
 }
