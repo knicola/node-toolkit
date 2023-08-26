@@ -2,6 +2,18 @@
   "name": "@knicola/delay",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "@knicola/delay_v0.1.1",
+      "date": "Sat, 26 Aug 2023 18:30:43 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@knicola/dev-config\" to `0.3.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.0",
       "tag": "@knicola/delay_v0.1.0",
       "date": "Sat, 31 Dec 2022 21:53:14 GMT",
